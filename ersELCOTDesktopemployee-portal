@@ -1,0 +1,15 @@
+[1mdiff --git a/backend/routes/authRoutes.js b/backend/routes/authRoutes.js[m
+[1mindex 23cbc16..ba7e12b 100644[m
+[1m--- a/backend/routes/authRoutes.js[m
+[1m+++ b/backend/routes/authRoutes.js[m
+[36m@@ -8,10 +8,4 @@[m [mrouter.post("/register", register);[m
+ router.post("/login", login);[m
+ router.get("/me", authMiddleware, getMe);[m
+ [m
+[31m-router.get("/test", (req, res) => {[m
+[31m-  res.json({[m
+[31m-    success: true,[m
+[31m-    message: "Auth route is working",[m
+[31m-  });[m
+[31m-});[m
+ export default router;[m

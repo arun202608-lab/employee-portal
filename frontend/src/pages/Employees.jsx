@@ -199,7 +199,7 @@ const Employees = () => {
     setLoading(true);
     setRequestError(false);
     try {
-      const response = await api.get("/test/people", {
+      const response = await api.get("/zoho/people", {
         signal,
         headers: { Authorization: `Bearer ${token}` },
       });
