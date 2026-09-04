@@ -40,6 +40,12 @@ app.get("/", (req, res) => {
     message: "Employee Portal API is running",
   });
 });
+app.get("/api/test-route", (req, res) => {
+  res.json({
+    success: true,
+    message: "API routes are working"
+  });
+});
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
