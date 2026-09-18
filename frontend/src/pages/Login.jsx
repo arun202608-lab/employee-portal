@@ -1,5 +1,6 @@
 import { Eye, EyeOff, LockKeyhole, Mail } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import api from "../services/api";
 
 const Login = () => {
@@ -187,6 +188,15 @@ const Login = () => {
 
             <p className="mt-8 text-center text-xs leading-5 text-slate-400">
               Access is controlled by your assigned role and permissions.
+              <span className="mt-2 block text-sm text-slate-500">
+                Don&apos;t have an account?{" "}
+                <Link
+                  to="/create-account"
+                  className="font-semibold text-slate-900 transition hover:text-slate-600"
+                >
+                  Create an account
+                </Link>
+              </span>
             </p>
           </div>
         </section>
