@@ -5,6 +5,7 @@ import Users from "./pages/Users";
 import Permissions from "./pages/Permissions";
 import Roles from "./pages/Roles";
 import AuditLogs from "./pages/AuditLogs";
+import CreateAccount from "./pages/CreateAccount";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/roles" element={<Roles />} />
         <Route path="/permissions" element={<Permissions />} />
         <Route path="/audit-logs" element={<AuditLogs />} />
+        <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
     </BrowserRouter>
   );
